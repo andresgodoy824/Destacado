@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Schedule Today</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="schedule">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="menu-list">Home</a></li>
+        <li><a href="schedule.html" class="menu-list">Schedule</a></li>
+        <li><a href="interior.html" class="menu-list">Interior</a></li>
+        <li><a href="exterior.html" class="menu-list">Exterior</a></li>
+        <li><a href="about-us.htm" class="menu-list">About</a></li>
+        <li><a href="contact.html" class="menu-list">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 id="schedule-header">Convinient hours that fit <br></br>your schedule!</h1>
+  <p id="schedule-text">Enter your information below to schedule a detail!</p>
+  <form id="myForm" action="https://formsubmit.co/24661f52ae048ef39073218e2185f4e1" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="_next" value="https://Destacado.andresgodoy1.repl.co/thanks.html">
+    <input type="hidden" name="_captcha" value="false">
+    <fieldset id="personal-info">
+      <label for="first-name">First Name: <input id="first-name" type="text" required name="first-name" /></label>
+      <label for="last-name">Last Name: <input id="last-name" type="text" required name="last-name" /></label>
+      <label for="email">Email: <input id="email" type="email" required name="email" /></label>
+      <label for="phone">Phone Number: <input id="phone" type="tel" length="7" required name="phone-number" /></label>
+    </fieldset>
+    <fieldset id="location">
+      <label>Select Location:</label>
+      <label for="mechanicsburg-button"><input type="radio" name="location" id="mechanicsburg-button" class="inline"
+          value="mechanicsburg" />Mechanicsburg </label>
+      <label for="lancaster-button"><input type="radio" name="location" id="lancaster-button" class="inline"
+          value="lancaster" />Lancaster </label>
+      <label>We are mobile and will send a team closest to you!</label>
+    </fieldset>
+    <fieldset id="service">
+      <label>Select Service:</label>
+      <label for="interior-button"><input type="checkbox" name="detail-type" id="interior-button" class="inline"
+          value="interior" /> Interior Detail</label>
+      <label for="exterior-button"><input type="checkbox" name="detail-type" id="exterior-button" class="inline"
+          value="exterior" /> Exterior Detail</label>
+      <label for="complete-button"><input type="checkbox" name="detail-type" id="complete-button" class="inline"
+          value="complete" /> Complete Detail</label>
+      <label for="ceramic-coating"><input type="checkbox" name="detail-type" id="ceramic-coating" class="inline"
+          value="complete" /> Ceramic Coating</label>
+      <label for="paint-correction"><input type="checkbox" name="detail-type" id="paint-correction" class="inline"
+          value="complete" /> Paint Correction</label>
+      <label for="liability"><input type="checkbox" required id="liability" name="liability" class="inline" /> I have
+        read and accept the <a id="liability" href="photos/Destacado Liability Waiver-1.pdf">liability
+          waiver</a></label>
+    </fieldset>
+    <fieldset id="quote">
+      <p id="quote-text">Give us some information on what you are looking for and get a FREE quote today!</p>
+      <label for="make">Make: <input id="make" type="text" required name="make" /></label>
+      <label for="model">Model: <input id="model" type="text" required name="model" /></label>
+      <label for="year">Year: <input id="year" type="number" length="4" min="1985" required name="year" /></label>
+     <label>Is this vehicle a daily driver?</label>
+      <label for="yes-daily"><input type="radio" name="daily" id="yes-daily" class="inline" value="yes-daily" /> Yes</label>
+      <label for="no-daily"><input type="radio" name="daily" id="no-daily" class="inline" value="no-daily" /> No</label>
+      <label>Do any pets ride in this vehicle?</label>
+      <label for="yes-pets"><input type="radio" name="pets" id="yes-pets" class="inline" value="yes-pets" /> Yes</label>
+      <label for="no-pets"><input type="radio" name="pets" id="no-pets" class="inline" value="no-pets" /> No</label>
+      <label>Does anyone eat or drink in the vehicle?</label>
+      <label for="yes-eat"><input type="radio" name="eat" id="yes-eat" class="inline" value="yes-eat" /> Yes</label>
+      <label for="no-eat"><input type="radio" name="eat" id="no-eat" class="inline" value="no-eat" /> No</label>
+      <label>Is this vehicle garage kept?</label>
+      <label for="yes-garage"><input type="radio" name="garage" id="yes-garage" class="inline" value="yes-garage" /> Yes</label>
+      <label for="no-garage"><input type="radio" name="garage" id="no-garage" class="inline" value="no-garage" /> No</label>
+      <label>Has this car been detailed before?</label>
+      <label for="yes-detailed"><input type="radio" name="detailed" id="yes-detailed" class="inline" value="yes-detailed" /> Yes</label>
+      <label for="no-detailed"><input type="radio" name="detailed" id="no-detailed" class="inline" value="no-detailed" /> No</label>
+      <label>Is this car regularly detailed?</label>
+      <label for="yes-regular"><input type="radio" name="regular" id="yes-regular" class="inline" value="yes-regular" /> Yes</label>
+      <label for="no-regular"><input type="radio" name="regular" id="no-regular" class="inline" value="no-regular" /> No</label>
+      <label>What kind of results are you looking for?</label>
+      <label for="regular"><input type="radio" name="results" id="regular" class="inline" value="regular" /> Regular Clean</label>
+      <label for="brand-new"><input type="radio" name="results" id="brand-new" class="inline" value="brand-new" /> Brand New Clean</label>
+      <label for="show-room"><input type="radio" name="results" id="show-room" class="inline" value="show-room" /> Show Room Clean</label>
+      <label>Are you at all interested in getting on a regular detailing schedule or maintenance plan?</label>
+      <label for="yes-plan"><input type="radio" name="plan" id="yes-plan" class="inline" value="yes-plan" /> Yes</label>
+      <label for="no-plan"><input type="radio" name="plan" id="no-plan" class="inline" value="no-plan" /> No</label>
+      <label for="comments">Additional Comments: <textarea id="comments" rows="5" cols="30"
+          placeholder="i.e. Stains on seats, Smoke Odor, Swirl Marks in the paint..." name="comments"></textarea></label>
+    </fieldset>
+    <fieldset id="referrer">
+      <label for="referrer">How did you hear about us?
+        <select id="referrer" name="referrer">
+          <option value="select">(Select One)</option>
+          <option value="friend">Referred from a friend</option>
+          <option value="flyer">Flyer or business card</option>
+          <option value="social">Social Media</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label for="availability">Provide your availabilty: <textarea id="availability" rows="5" cols="30"
+          placeholder="i.e. Mondays from 10am-5pm..." name="availability"></textarea></label>
+    </fieldset>
+    <input type="submit"></input>
+  </form>
+</body>
+</html>
